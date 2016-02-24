@@ -136,11 +136,11 @@ void RSA(mpz_t e, mpz_t d,  mpz_t n, mpz_t phi, mpz_t e1, mpz_t d1, mpz_t n1, mp
      Rand_x(q,n,c+123,mp2exp+105,256);
      Rand_x(p1,n,c-5,mp2exp+5,256);
     // Rand_x(q1,n,c-8,mp2exp+89,256);
-    
+    mpz_sub_ui(temp1,p,1);
      mpz_sub_ui(temp2,q,1);
      mpz_mul(phi,temp1, temp2);
-     mpz_gcdext(n,temp1, temp2, e, phi);
-     mpz_mod(temp2,temp1,phi);
+     //mpz_gcdext(n,temp1, temp2, e, phi);
+     //mpz_mod(temp2,temp1,phi);
      mpz_set(d,temp2);
      mpz_mul(n,p,q);
      mpz_sub_ui(temp1,p1,1);
