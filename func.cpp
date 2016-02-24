@@ -250,9 +250,6 @@ void RSA(mpz_t e, mpz_t d,  mpz_t n, mpz_t phi, mpz_t e1, mpz_t d1, mpz_t n1, mp
  
  void encrypt(mpz_t C, mpz_t M, mpz_t e, mpz_t n)
  {    Horner(C,M,e,n);  }
-
-void encrypt1(mpz_t C, mpz_t M, mpz_t e, mpz_t n)
-{    Horner(C,M,e,n);  }
  
 void decrypt(mpz_t M, mpz_t C, mpz_t d, mpz_t n)
 {     Horner(M,C,d,n); }
