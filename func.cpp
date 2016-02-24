@@ -1,6 +1,6 @@
 #include "ascrypt2.h"
 
-void Rand_x_modp (mpz_t x, mpz_t p, mpz_t n, unsigned long c, int m2exp) //c, m2exp менять перед новым вызовом
+void Rand_x_modp (mpz_t x, mpz_t p, mpz_t n, unsigned long c, int m2exp) //c, m2exp Г¬ГҐГ­ГїГІГј ГЇГҐГ°ГҐГ¤ Г­Г®ГўГ»Г¬ ГўГ»Г§Г®ГўГ®Г¬
 {
      mpz_t temp; mpz_init(temp);
      gmp_randstate_t state; 
@@ -10,7 +10,7 @@ void Rand_x_modp (mpz_t x, mpz_t p, mpz_t n, unsigned long c, int m2exp) //c, m2
      
 }
 
-int ZeroStep(mpz_t d, mpz_t p) // p=p-1 передавать сразу p-1
+int ZeroStep(mpz_t d, mpz_t p) // p=p-1 ГЇГҐГ°ГҐГ¤Г ГўГ ГІГј Г±Г°Г Г§Гі p-1
 {
      mpz_t temp, p_1;
      mpz_init_set(p_1,p);     
@@ -251,6 +251,9 @@ void RSA(mpz_t e, mpz_t d,  mpz_t n, mpz_t phi, mpz_t e1, mpz_t d1, mpz_t n1, mp
 //void encrypt(mpz_t C, mpz_t M, mpz_t e, mpz_t n)
  //{    Horner(C,M,e,n);  }
 
+void encrypt1(mpz_t C, mpz_t M, mpz_t e, mpz_t n)
+{    Horner(C,M,e,n);  }
+ 
 void decrypt(mpz_t M, mpz_t C, mpz_t d, mpz_t n)
 {     Horner(M,C,d,n); }
 
