@@ -2,11 +2,11 @@
 
 void Rand_x_modp (mpz_t x, mpz_t p, mpz_t n, unsigned long c, int m2exp) //c, m2exp менять перед новым вызовом
 {
-     mpz_t temp; mpz_init(temp);
+     //mpz_t temp; mpz_init(temp);
       //gmp_randstate_t state; 
-      gmp_randinit_lc_2exp(state, n, c, m2exp);
-      //mpz_urandomb(n,state,257);
-	  mpz_urandomb(n,state,256);
+      ///gmp_randinit_lc_2exp(state, n, c, m2exp);
+      ////mpz_urandomb(n,state,257);
+	 /// mpz_urandomb(n,state,256);
       
 }
 
