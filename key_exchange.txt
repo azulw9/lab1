@@ -18,4 +18,4 @@ A:
  k'= 2
  S' = 1f3ca33ff5747a5d21e29b96de8baa26f97b32e5eb9f85f53d6abaa633a0843ad40a5784344ce3a59384b8a13b5f4ae94e95bfbbc21954f8955f5322e3bcfe2e9
  Check signature of A:
- S^emodn= 2
+ S^emodn= 5
